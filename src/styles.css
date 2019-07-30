@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Componente: Shell <app-shell> */
+app-shell {
+  display: flex;
+  justify-content: center;
+}
+
+app-shell .container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 90px;
+  width: 800px;
+}
+
+/* Componente: <app-filter> */
+app-filter input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 22px;
+  border-radius: 20px;
+  outline: none;
+}
+
+/* Componente: <app-talks> */
+app-talks {
+  margin-top: 30px;
+}
+
+/* Componente: <app-talk> */
+app-talk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: #0000001f solid 1px;
+}
+
+app-talk:last-child {
+  border-bottom: none;
+}
+
+app-talk .content {
+  display: flex;
+}
+
+app-talk img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+app-talk div {
+  padding-left: 20px;
+}
+
+app-talk .actions button {
+  padding: 10px;
+  width: 130px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+}
+
+app-talk .actions button.active {
+  font-weight: bold;
+  border-color: green;
+  color: green;
+}
+
+/* Componente: <app-talk-detail> */
+app-talk-detail {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+app-talk-detail .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+app-talk-detail .content .description {
+  width: 800px;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+app-talk-detail .content .image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
